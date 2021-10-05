@@ -17,7 +17,7 @@ inputBox.onkeyup = ()=>{
 showTasks(); //calling showTask function
 
 addBtn.onclick = ()=>{ //when user click on plus icon button
-  let userEnteredValue = inputBox.value; //getting input field value
+  let userEnteredValue = `${inputBox.value}!`; //getting input field value
   let getLocalStorageData = localStorage.getItem("New Todo"); //getting localstorage
   if(getLocalStorageData == null){ //if localstorage has no data
     listArray = []; //create a blank array
